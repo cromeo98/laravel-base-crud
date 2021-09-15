@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'homepage')
+@section('title', 'comics')
 
 @section('content')
 
@@ -22,7 +22,7 @@
                         <td>{{$comic->title}}</td>
                         <td>{{$comic->price}}</td>
                         <td>
-                            <a href="" class="btn btn-outline-success">Show</a>
+                            <a href="{{route('comics.show', $comic->id)}}" class="btn btn-outline-success">Show</a>
                             <a href="" class="btn btn-outline-warning">Edit</a>
                             <a href="" class="btn btn-outline-danger">Delete</a>
                         </td>
