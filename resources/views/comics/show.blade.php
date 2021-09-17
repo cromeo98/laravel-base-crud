@@ -11,7 +11,7 @@
                 <h2>{{$comic->title}}</h2>
             </div>
         </div>
-        <div class="row align-items-center justify-content-center">
+        <div class="row align-items-center justify-content-around">
             <div class="col-2">
                 <img src="{{$comic->thumb}}" alt="{{$comic->title}}">
             </div>

@@ -4,7 +4,8 @@
 
 @section('content')
     <div class="container">
-        <form>
+        <form action="{{route('comics.store')}}" method="post">
+            @csrf
             <h3 class="my-3">Inserimento nuovo prodotto</h3>
             <div class="my-3">
               <label for="title" class="form-label">Titolo</label>
