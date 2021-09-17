@@ -48,7 +48,12 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
+        if($comics){
             return view('comics.show', compact('comic'));
+        }
+
+        // abort('404');
+
     }
 
     /**
