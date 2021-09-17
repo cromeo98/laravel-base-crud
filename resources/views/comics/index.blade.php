@@ -5,6 +5,12 @@
 @section('content')
 
     <div class="container">
+        @if (session('update'))
+        <p class="alert btn-outline-success mt-2">{{session('update')}}</p>     
+        @endif
+        @if (session('delete'))
+        <p class="alert btn-outline-warning mt-2">{{session('delete')}}</p>     
+        @endif
         <table class="table table-striped">
             <thead>
               <tr>
@@ -24,7 +30,11 @@
                         <td>
                             <a href="{{route('comics.show', $comic->id)}}" class="btn btn-outline-success">Show</a>
                             <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-outline-warning">Edit</a>
-                            <a href="" class="btn btn-outline-danger">Delete</a>
+                            <form action="{{route('comics.destroy', $comic->id)}}" method="post" class="d-inline-block">
+                            @csrf
+                            @method('DELETE')
+                            <input class="btn btn-outline-danger" type="submit" value="delete">
+                            </form>
                         </td>
                     </tr>
                 @endforeach

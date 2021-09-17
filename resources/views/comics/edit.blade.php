@@ -7,7 +7,7 @@
         <form action="{{route('comics.update', $comic->id)}}" method="post">
             @csrf
             @method('PUT')
-            <h3 class="my-3">Inserimento nuovo Comic</h3>
+            <h3 class="my-3">Modifica Comic</h3>
             <div class="my-3">
               <label for="title" class="form-label">Titolo</label>
               <input type="text" name="title" class="form-control" id="title" value="{{$comic->title}}">
