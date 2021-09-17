@@ -11,6 +11,7 @@
                     <div class="navbar-nav">
                       <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">Home</a>
                       <a class="nav-link active" aria-current="page" href="{{route('comics.index')}}">Comics</a>
+                      <a class="nav-link active" aria-current="page" href="{{route('comics.create')}}">New Comic</a>
                       <a class="nav-link active" aria-current="page" href="#">About us</a>
 
                     </div>
