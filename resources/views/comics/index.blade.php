@@ -9,7 +9,7 @@
         <p class="alert btn-outline-success mt-2">{{session('update')}}</p>     
         @endif
         @if (session('delete'))
-        <p class="alert btn-outline-warning mt-2">{{session('delete')}}</p>     
+        <p class="alert btn-outline-danger mt-2">{{session('delete')}}</p>     
         @endif
         <table class="table table-striped">
             <thead>

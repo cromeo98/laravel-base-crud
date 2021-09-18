@@ -34,7 +34,7 @@
             <div class="my-3">
                 <label for="type" class="form-label">Tipologia Comic</label>
                 <select name="type" id="type" class="form-control">
-                    <option value="">-- seleziona una tipologia --</option>
+                    {{-- <option value="">-- seleziona una tipologia --</option> --}}
                     <option value="comic book">Comic book</option>
                     <option value="graphic novel">Graphic novel</option>
                 </select>
